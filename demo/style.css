@@ -14,7 +14,7 @@ html,body, div, span{
 header {
     padding: 1.2% 30px;
     margin-bottom: 20px;
-    background: #2196f3;
+	background: #2196f3;
     text-shadow: 1px 1px 1px #000;
     box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
     -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
@@ -55,7 +55,7 @@ margin-right:90px;
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: green url("grass.jpg") repeat fixed center;
 }
 .clr { clear:both;}
@@ -75,10 +75,26 @@ table {
     margin-top: 20px;
     display: block;
 }
+
+
+
+/*============= flex box side by side ==============*/
+
+.container {
+  display: flex;
+	z-index: 3
+		
+	}
+.container > div {
+  flex: 1; /*grow*/
+  position: relative;
+}
+
+/*=============== making draggable elemets ===============*/
 .ui-draggable, .ui-droppable {
     background-position: top;
-}
-/*=============== making draggable elemets ===============*/
+}  
+
 #draggable {
     width: 150px;
     height: 150px;
@@ -88,14 +104,14 @@ table {
 
 #player1 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player1 div {
-    position: relative;
+    position: absolute;
     left: 567px;
     top: -410px;
     color: white;
@@ -122,14 +138,14 @@ table {
 /*================ Players =============================*/
 #player2 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player2 div {
-    position: relative;
+    position: absolute;
     left: 570px;
     top: -301px;
     color: white;
@@ -137,14 +153,14 @@ table {
 }
 #player3 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player3 div {
-    position: relative;
+    position: absolute;
     left: 571px;
     top: -192px;
     color: white;
@@ -152,14 +168,14 @@ table {
 }
 #player4 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player4 div {
-    position: relative;
+    position: absolute;
     left: 506px;
     top: -554px;
     color: white;
@@ -167,14 +183,14 @@ table {
 }
 #player5 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player5 div {
-    position: relative;
+    position: absolute;
     left: 507px;
     top: -464px;
     color: white;
@@ -182,14 +198,14 @@ table {
 }
 #player6 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player6 div {
-    position: relative;
+    position: absolute;
     left: 19px;
     top: 19px;
     width: 90px;
@@ -199,14 +215,14 @@ table {
 }
 #player7 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player7 div {
-    position: relative;
+    position: absolute;
     left: 19px;
     top: 19px;
     width: 90px;
@@ -216,14 +232,14 @@ table {
 }
 #player8 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player8 div {
-    position: relative;
+    position: absolute;
     left: 19px;
     top: 19px;
     width: 90px;
@@ -233,65 +249,14 @@ table {
 }
 #player9 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
 #player9 div {
-    position: relative;
-    left: 19px;
-    top: 19px;
-    width: 90px;
-    height: 90px;
-    color: white;
-    text-align: center;
-}
-#player1 {
-    background: black;
-    width: 2%;
-    height: 2%;
-    border-radius: 50%;
-    border: 5px solid orange;
-    z-index: 2;
-}
-#player1 div {
-    position: relative;
-    left: 19px;
-    top: 19px;
-    width: 90px;
-    height: 90px;
-    color: white;
-    text-align: center;
-}
-#player10 {
-    background: black;
-    width: 2%;
-    height: 2%;
-    border-radius: 50%;
-    border: 5px solid orange;
-    z-index: 2;
-}
-#player10 div {
-    position: relative;
-    left: 19px;
-    top: 19px;
-    width: 90px;
-    height: 90px;
-    color: white;
-    text-align: center;
-}
-#player11 {
-    background: black;
-    width: 2%;
-    height: 2%;
-    border-radius: 50%;
-    border: 5px solid orange;
-    z-index: 2;
-}
-#player11 div {
-    position: relative;
+    position: absolute;
     left: 19px;
     top: 19px;
     width: 90px;
@@ -301,48 +266,135 @@ table {
 }
 #player01 {
     background: black;
-    width: 2%;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
     border: 5px solid orange;
     z-index: 2;
 }
-#player1 div {
-    position: relative;
+#player01 div {
+    position: absolute;
     left: 19px;
     top: 19px;
     width: 90px;
     height: 90px;
     color: white;
+    text-align: center;
+}
+#player10 {
+    background: black;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player10 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player11 {
+    background: black;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player11 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player01 {
+    background: white ;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player01 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: black;
     text-align: center;
 }
 #player02 {
-    background: black;
-    width: 2%;
+    background: white;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
-    border: 5px solid orange;
+    border: 5px solid #2196f3;
     z-index: 2;
 }
-#player1 div {
-    position: relative;
+#player02 div {
+    position: absolute;
     left: 19px;
     top: 19px;
     width: 90px;
     height: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 #player03 {
-    background: black;
-    width: 2%;
+    background: white;
+    width: 20%;
     height: 2%;
     border-radius: 50%;
-    border: 5px solid orange;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player03 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: black;
+    text-align: center;
+}
+
+#player04 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
     z-index: 2;
 }
 #player04 div {
-    position: relative;
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: black;
+    text-align: center;
+}
+
+#player05 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player05 div {
+    position: absolute;
     left: 19px;
     top: 19px;
     width: 90px;
@@ -350,3 +402,203 @@ table {
     color: white;
     text-align: center;
 }
+
+#player06 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player06 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+
+#player07 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player07 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+
+#player08 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player08 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+
+#player09 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player09 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+
+#player010 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player010 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+
+#player011 {
+    background: white;
+    width: 20%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    z-index: 2;
+}
+#player011 div {
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/*============================= Acardion wrap ==========================*/
+
+#acardion-wrap-left { width:10%; position:absolute; left:5px; top:80px;
+border:0.1rem solid #000;padding-top: 10px;font-size:14px;margin-top: auto;z-index: 4;padding-bottom: 10px;
+} 
+
+#acardion-wrap-right { width:10%; position:absolute; right:5px; top:80px;
+border:0.1rem solid #000;padding-top: 10px;font-size:14px;margin-top: auto;z-index: 4;padding-bottom: 10px;
+} 
+
+  .acardion-block-title {
+    background: #555555;
+    background: -moz-linear-gradient(top,  #555555 0%, #222222 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#222222));
+    background: -webkit-linear-gradient(top,  #555555 0%,#222222 100%);
+    background: -o-linear-gradient(top,  #555555 0%,#222222 100%);
+    background: -ms-linear-gradient(top,  #555555 0%,#222222 100%);
+    background: linear-gradient(to bottom,  #555555 0%,#222222 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#222222',GradientType=0 );
+    
+    padding:5px 10px;
+    color:#72DCFF;
+    text-shadow:1px 1px 1px #000;
+    -webkit-box-shadow: inset 0px 2px 1px -1px rgba(255,255,255,0.4);
+    box-shadow: inset 0px 2px 1px -1px rgba(255,255,255,0.4);
+    border-top:1px solid #000;
+    
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+    cursor:pointer;
+  
+  }
+
+  .acardion-block-title:hover{
+   background: rgb(115,115,115);
+background: -moz-linear-gradient(top,  rgba(115,115,115,1) 0%, rgba(48,48,48,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(115,115,115,1)), color-stop(100%,rgba(48,48,48,1)));
+background: -webkit-linear-gradient(top,  rgba(115,115,115,1) 0%,rgba(48,48,48,1) 100%);
+background: -o-linear-gradient(top,  rgba(115,115,115,1) 0%,rgba(48,48,48,1) 100%);
+background: -ms-linear-gradient(top,  rgba(115,115,115,1) 0%,rgba(48,48,48,1) 100%);
+background: linear-gradient(to bottom,  rgba(115,115,115,1) 0%,rgba(48,48,48,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#303030',GradientType=0 );
+ 
+
+  }
+
+  .acardion-block:first-child .acardion-block-title {
+    -webkit-border-top-left-radius: 5px;
+   -webkit-border-top-right-radius: 5px;
+   -moz-border-radius-topleft: 5px;
+   -moz-border-radius-topright: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-top:none;
+
+  }
+
+  .acardion-block:last-child  {
+      -webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+  }
+
+  .manage-box-block,
+  .acardion-block-content { background:#252525; padding:10px; color:#ddd; border-top:1px solid #000;
+    -webkit-box-shadow: inset 0px 2px 1px -1px #363636;
+    box-shadow: inset 0px 2px 1px -1px #363636;
+    position:relative;
+  }
+
+  #keyframes-nav-wrap .acardion-block-content { padding:0;}
+  #keyframes-nav { width:100%; outline:none;
+  background:#252525; color:#ddd;}
+
+  .manage-box {
+     background:#252525;
+    color:#ddd;
+     border:1px solid #000;
+     border-radius:5px;
+  }
+
+  .manage-box .acardion-block-title { border-radius:5px; border-top:none;}
