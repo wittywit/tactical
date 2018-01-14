@@ -1,0 +1,352 @@
+
+
+html,body, div, span{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+header {
+    padding: 1.2% 30px;
+    margin-bottom: 20px;
+    background: #2196f3;
+    text-shadow: 1px 1px 1px #000;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+#main-title {
+    display: inline-block;
+    font-size: 38px;
+    color: #333;
+}
+#main-nav {
+    display: inline-block;
+}
+#main-nav a {
+    color: #eee;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+#main-nav a:hover {
+    color: #fff;
+    border-bottom: 1px dashed;
+}
+
+
+#logo { 
+text-decoration:none;
+margin-right:90px;
+ }
+ 
+ #logo-label { font-size:22px; color:#fff; 
+ 
+ font-family: 'Black Ops One', cursive;
+ letter-spacing: 1px;
+ 
+ }
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: green url("grass.jpg") repeat fixed center;
+}
+.clr { clear:both;}
+table {
+    font-size: 1em;
+}
+#field {
+    height: 100%;
+    width: 100%;/*background-size: 150%;*/
+}
+#field div {
+    background: url(./field.png);
+}
+#field img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+}
+.ui-draggable, .ui-droppable {
+    background-position: top;
+}
+/*=============== making draggable elemets ===============*/
+#draggable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+}
+/*============= Circular Players =================*/
+
+#player1 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player1 div {
+    position: relative;
+    left: 567px;
+    top: -410px;
+    color: white;
+    text-align: center;
+}
+#num {
+    margin: 0 auto;
+    padding-top: 25%
+}
+/*player{
+	background: black; 
+	width: 2%;
+	height: 2%; 
+	border-radius: 50%; 
+	border: 5px solid orange; 
+	z-index: 2;
+}
+.player div {
+	 position:relative; left: 19px; top: 19px; width: 90px; height: 90px; color: white; text-align:center; 
+}*/
+
+
+
+/*================ Players =============================*/
+#player2 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player2 div {
+    position: relative;
+    left: 570px;
+    top: -301px;
+    color: white;
+    text-align: center;
+}
+#player3 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player3 div {
+    position: relative;
+    left: 571px;
+    top: -192px;
+    color: white;
+    text-align: center;
+}
+#player4 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player4 div {
+    position: relative;
+    left: 506px;
+    top: -554px;
+    color: white;
+    text-align: center;
+}
+#player5 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player5 div {
+    position: relative;
+    left: 507px;
+    top: -464px;
+    color: white;
+    text-align: center;
+}
+#player6 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player6 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player7 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player7 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player8 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player8 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player9 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player9 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player1 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player1 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player10 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player10 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player11 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player11 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player01 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player1 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player02 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player1 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
+#player03 {
+    background: black;
+    width: 2%;
+    height: 2%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    z-index: 2;
+}
+#player04 div {
+    position: relative;
+    left: 19px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+}
