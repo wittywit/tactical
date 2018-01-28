@@ -1,4 +1,6 @@
-
+#containment-wrapper{
+	
+}
 
 html,body, div, span{
   margin: 0;
@@ -66,9 +68,7 @@ table {
     height: 100%;
     width: 100%;/*background-size: 150%;*/
 }
-#field div {
-    background: url(./field.png);
-}
+
 #field img {
     margin-left: auto;
     margin-right: auto;
@@ -100,10 +100,28 @@ table {
     height: 150px;
     padding: 0.5em;
 }
+
+/*============= ball =====================*/
+#ball{
+	position: absolute
+	
+}
+#ball img{
+	z-index: 10; width: 25px;
+    height: 25px;
+	display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+	
+	
+	
+}
+
 /*============= Circular Players =================*/
 
 #player1 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -137,7 +155,7 @@ table {
 
 /*================ Players =============================*/
 #player2 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -152,7 +170,7 @@ table {
     text-align: center;
 }
 #player3 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -167,7 +185,7 @@ table {
     text-align: center;
 }
 #player4 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -182,7 +200,7 @@ table {
     text-align: center;
 }
 #player5 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -197,7 +215,7 @@ table {
     text-align: center;
 }
 #player6 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -214,7 +232,7 @@ table {
     text-align: center;
 }
 #player7 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -231,7 +249,7 @@ table {
     text-align: center;
 }
 #player8 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -248,7 +266,7 @@ table {
     text-align: center;
 }
 #player9 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -265,7 +283,7 @@ table {
     text-align: center;
 }
 #player01 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -282,7 +300,7 @@ table {
     text-align: center;
 }
 #player10 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -299,7 +317,7 @@ table {
     text-align: center;
 }
 #player11 {
-    background: black;
+    background: orange;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -316,7 +334,7 @@ table {
     text-align: center;
 }
 #player01 {
-    background: white ;
+    background: #2196f3 ;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -333,7 +351,7 @@ table {
     text-align: center;
 }
 #player02 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -350,7 +368,7 @@ table {
     text-align: center;
 }
 #player03 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -368,7 +386,7 @@ table {
 }
 
 #player04 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -386,7 +404,7 @@ table {
 }
 
 #player05 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -399,12 +417,12 @@ table {
     top: 19px;
     width: 90px;
     height: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #player06 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -417,12 +435,12 @@ table {
     top: 19px;
     width: 90px;
     height: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #player07 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -435,12 +453,12 @@ table {
     top: 19px;
     width: 90px;
     height: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #player08 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -453,12 +471,12 @@ table {
     top: 19px;
     width: 90px;
     height: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #player09 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -471,12 +489,12 @@ table {
     top: 19px;
     width: 90px;
     height: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #player010 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -489,12 +507,12 @@ table {
     top: 19px;
     width: 90px;
     height: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 #player011 {
-    background: white;
+    background: #2196f3;
     width: 20%;
     height: 2%;
     border-radius: 50%;
@@ -516,7 +534,7 @@ table {
 
 /*============================= Acardion wrap ==========================*/
 
-#acardion-wrap-left { width:10%; position:absolute; left:5px; top:80px;
+#acardion-wrap-left { width:auto; position:absolute; left:5px; top:80px;
 border:0.1rem solid #000;padding-top: 10px;font-size:14px;margin-top: auto;z-index: 4;padding-bottom: 10px;
 } 
 
@@ -563,25 +581,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', end
 
   }
 
-  .acardion-block:first-child .acardion-block-title {
-    -webkit-border-top-left-radius: 5px;
-   -webkit-border-top-right-radius: 5px;
-   -moz-border-radius-topleft: 5px;
-   -moz-border-radius-topright: 5px;
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
-   border-top:none;
-
-  }
-
-  .acardion-block:last-child  {
-      -webkit-border-bottom-right-radius: 5px;
--webkit-border-bottom-left-radius: 5px;
--moz-border-radius-bottomright: 5px;
--moz-border-radius-bottomleft: 5px;
-border-bottom-right-radius: 5px;
-border-bottom-left-radius: 5px;
-  }
+  
 
   .manage-box-block,
   .acardion-block-content { background:#252525; padding:10px; color:#ddd; border-top:1px solid #000;

@@ -71,3 +71,45 @@ $( function() {
 $( function() {
     $( "#player011" ).draggable();
   } );
+
+$( function() {
+    $( "#ball" ).draggable();
+  } );
+
+
+/*====================== Saving Image Screenshot of the viewport =====================*/
+
+$(document).ready(function(){
+
+	
+var element = $("#containment-wrapper"); // global variable
+var getCanvas; // global variable
+   
+
+	$("#btn-Convert-Html2Image").on('click', function () {
+
+html2canvas(element, {
+	onrendered: function (canvas) {
+		getCanvas = canvas;
+	}
+});
+var imgageData = getCanvas.toDataURL("image/png");
+
+// Now browser starts downloading it instead of just showing it
+
+var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+
+$("#btn-Convert-Html2Image").attr("download", "Tactical_pad_.png").attr("href", newData);
+});
+
+});
+
+
+
+
+
+
+/*====================== Saving position of Players dragged in Local storage =====================*/
+
+
+
