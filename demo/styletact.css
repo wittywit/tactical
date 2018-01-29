@@ -1,9 +1,153 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+ #warning-message { display: none; }
+    @media only screen and (orientation:portrait){
+        #box { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
+
+
+html,body, div, span,label,p{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+	font-weight: 600;
+	color: white;
+}
+
+p{
+	color: white;
+	z-index: 9;
+}
+
 body {
     background: green url("grass.jpg") repeat fixed center;
 }
+
+#button { padding: .5em 1em; text-decoration: none; }
+
+header {
+    padding: 1.2% 30px;
+    margin-bottom: 20px;
+	background: #2196f3;
+    text-shadow: 1px 1px 1px #000;
+   
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+	 box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+#main-title {
+    display: inline-block;
+    font-size: 38px;
+    color: #333;
+}
+#main-nav {
+    display: inline-block;
+}
+#main-nav a {
+    color: #eee;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+#main-nav a:hover {
+    color: #fff;
+    border-bottom: 1px dashed;
+}
+
+
+#logo { 
+text-decoration:none;
+margin-right:90px;
+ }
+ 
+ #logo-label { font-size:22px; color:#fff; 
+ 
+ font-family: 'Black Ops One';
+ letter-spacing: 1px;
+ 
+ }
+
+
+/*================ buttons style =====================*/
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 40px;
+	display: inline-block;
+	 margin: 10px 25px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+
+/* Button 2 */
+.btn-2 {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 3px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+
+/* Button 2i */
+.btn-2i {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+}
+
+.btn-2i:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btn-2i:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+.btn-2i:focus{
+	background:#ab3c3c;
+	box-shadow: 0 0 #cb4e4e;
+	top: 6px;
+}
+
 .box {
     position: absolute;
     /*background-color: forestgreen;*/
@@ -17,7 +161,8 @@ body {
     background-image: url(field.svg);
     background-repeat: no-repeat;
     background-size: 130% 130%;
-    background-position: center
+    background-position: center;
+	margin-top: 5%;
 }
 .inner-box {
     width: 55px;
@@ -27,12 +172,14 @@ body {
 	 background-repeat: no-repeat;
     position: absolute;/*background: red;
 			border-radius: 50%;*/
+	crossOrigin:"Anonymous";
 			
 }
 .box>.inner-box:nth-child(1) { /*============ Goal Keeper Left =============== */
     left: 20%;
     top: 46%;
-    background-image: url(player/plB.png)
+    background-image: url(player/plB.png);
+		
 }
 .box>.inner-box:nth-child(2) {
     left: 30%;
@@ -49,14 +196,7 @@ body {
     left: 30%;
     background-image: url(player/plB.png)
 }
-.box>.inner-box:nth-child(5) {  /*================ football ===============*/
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-image: url(ball.svg)
-}
+
 .box>.inner-box:nth-child(6) {
     top: 12%;
     left: 36%;
@@ -87,14 +227,250 @@ body {
     left: 42%;
     background-image: url(player/plB.png)
 }
-.box>.inner-box:nth-child(12) {
+.box>.inner-box:nth-child(5) {
     bottom: 22%;
     left: 42%;
     background-image: url(player/plB.png)
 }
 
-.box>.inner-box:nth-child(13){
-			bottom: -50px;
-			right: -50px;
-	        background-image: url(player/shirtb1.png)
-		}
+/*====================== Foot ball =========================*/
+
+.box>.inner-box:nth-child(12) {  /*================ football ===============*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(ball.svg)
+}
+
+
+/*=================================== Team 2 =========================*/
+
+.box>.inner-box:nth-child(13) { /*============ Goal Keeper Left =============== */
+    right: 20%;
+    top: 46%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(14) {
+    right: 30%;
+    top: 46%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(15) {
+    top: 22%;
+    right: 30%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(16) {
+    bottom: 22%;
+    right: 30%;
+    background-image: url(player/plR.png)
+}
+
+.box>.inner-box:nth-child(17) {
+    top: 12%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(18) {
+    top: 32%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(19) {
+    top: 56%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(20) {
+    bottom: 12%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(21) {
+    top: 22%;
+    right: 42%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(22) {
+    top: 46%;
+    right: 42%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box:nth-child(23) {
+    bottom: 22%;
+    right: 42%;
+    background-image: url(player/plR.png)
+}
+
+/*==========================================================================================
+=========================================Formation 4-4-2 ===================================
+==========================================================================================*/
+
+.inner-box-442 {
+    width: 55px;
+    height: 55px;
+	background-size: 70% 70%;
+	background-position: center;
+	 background-repeat: no-repeat;
+    position: absolute;/*background: red;
+			border-radius: 50%;*/
+			
+}
+.box>.inner-box-442:nth-child(1) { /*============ Goal Keeper Left =============== */
+    left: 20%;
+    top: 46%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(2) {
+    left: 42%;
+    top: 32%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(3) {    
+    left: 42%;
+	top: 56%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(4) {
+    bottom: 12%;
+    left: 36%;
+    background-image: url(player/plB.png)
+}
+
+.box>.inner-box-442:nth-child(6) {
+    top: 12%;
+    left: 30%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(7) {
+    top: 32%;
+    left: 30%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(8) {
+    top: 56%;
+    left: 30%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(9) {
+    bottom: 12%;
+    left: 30%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(10) {
+    top: 12%;
+    left: 36%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(11) {
+    top: 32%;
+    left: 36%;
+    background-image: url(player/plB.png)
+}
+.box>.inner-box-442:nth-child(5) {
+    top: 56%;
+    left: 36%;
+    background-image: url(player/plB.png)
+}
+
+/*====================== Foot ball =========================*/
+
+.box>.inner-box-442:nth-child(12) {  /*================ football ===============*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(ball.svg)
+}
+
+
+/*=================================== Team 2 =========================*/
+
+.box>.inner-box-442:nth-child(13) { /*============ Goal Keeper Left =============== */
+    right: 20%;
+    top: 46%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(14) {  /*2*/
+    right: 42%;
+    top: 32%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(15) {   /*3*/
+    top: 56%;
+    right: 42%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(16) {  /*4*/
+    bottom: 12%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+
+.box>.inner-box-442:nth-child(17) {    /*5*/
+    top: 12%;
+    right: 30%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(18) {   /*6*/
+    top: 32%;
+    right: 30%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(19) {   /*7*/
+    top: 56%;
+    right: 30%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(20) {    /*8*/
+    bottom: 12%;
+    right: 30%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(21) {   /*9*/
+    top: 12%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(22) {  /*10*/
+    top: 32%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+.box>.inner-box-442:nth-child(23) {   /*11*/
+    top: 56%;
+    right: 36%;
+    background-image: url(player/plR.png)
+}
+
+
+
+/*=================================================================================*/
+
+
+/*============================= Acardion wrap ==========================*/
+
+#acardion-wrap-left { width:100px; position:absolute; left:1%; top:20%;
+border:0.1rem solid #000;padding-top: 10px;font-size:14px;margin-top: auto;padding-bottom: 10px;
+} 
+
+
+
+  .acardion-block-title {
+    background: #FFFFFF;   
+    padding:10px 10px;
+    color:#000;
+	  margin-top: auto;
+	  font-family: 'Black Ops One';
+ letter-spacing: 1px;
+    
+  
+  }
+
+  
+  
+
+  
