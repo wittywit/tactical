@@ -30,8 +30,11 @@ p{
 }
 
 body {
-    background: green url("grass.jpg") repeat fixed center;
+    background: green url("grass.png") repeat fixed center;
 }
+
+#my-node{}
+#btnd{}
 
 #button { padding: .5em 1em; text-decoration: none; }
 
@@ -164,6 +167,10 @@ margin-right:90px;
     background-position: center;
 	margin-top: 5%;
 }
+
+
+/*==================== Formation one ===================================*/
+
 .inner-box {
     width: 55px;
     height: 55px;
@@ -250,58 +257,58 @@ margin-right:90px;
 .box>.inner-box:nth-child(13) { /*============ Goal Keeper Left =============== */
     right: 20%;
     top: 46%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(14) {
     right: 30%;
     top: 46%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(15) {
     top: 22%;
     right: 30%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(16) {
     bottom: 22%;
     right: 30%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 
 .box>.inner-box:nth-child(17) {
     top: 12%;
     right: 36%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(18) {
     top: 32%;
     right: 36%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(19) {
     top: 56%;
     right: 36%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(20) {
     bottom: 12%;
     right: 36%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(21) {
     top: 22%;
     right: 42%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(22) {
     top: 46%;
     right: 42%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 .box>.inner-box:nth-child(23) {
     bottom: 22%;
     right: 42%;
-    background-image: url(player/plR.png)
+    background-image: url(./plR.png)
 }
 
 /*==========================================================================================
@@ -321,58 +328,58 @@ margin-right:90px;
 .box>.inner-box-442:nth-child(1) { /*============ Goal Keeper Left =============== */
     left: 20%;
     top: 46%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(2) {
     left: 42%;
     top: 32%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(3) {    
     left: 42%;
 	top: 56%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(4) {
     bottom: 12%;
     left: 36%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 
 .box>.inner-box-442:nth-child(6) {
     top: 12%;
     left: 30%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(7) {
     top: 32%;
     left: 30%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(8) {
     top: 56%;
     left: 30%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(9) {
     bottom: 12%;
     left: 30%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(10) {
     top: 12%;
     left: 36%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(11) {
     top: 32%;
     left: 36%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 .box>.inner-box-442:nth-child(5) {
     top: 56%;
     left: 36%;
-    background-image: url(player/plB.png)
+    background-image: url(./plB.png)
 }
 
 /*====================== Foot ball =========================*/
@@ -454,10 +461,12 @@ margin-right:90px;
 /*============================= Acardion wrap ==========================*/
 
 #acardion-wrap-left { width:100px; position:absolute; left:1%; top:20%;
-border:0.1rem solid #000;padding-top: 10px;font-size:14px;margin-top: auto;padding-bottom: 10px;
+padding-top: 10px;font-size:14px;margin-top: auto;padding-bottom: 10px;
 } 
 
-
+#acardion-wrap-right { width:100px; position:absolute; right:1%; top:20%;
+padding-top: 10px;font-size:14px;margin-top: auto;padding-bottom: 10px;
+} 
 
   .acardion-block-title {
     background: #FFFFFF;   

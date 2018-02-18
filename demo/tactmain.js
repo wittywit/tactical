@@ -14,25 +14,25 @@
 			 
 			 
 			 
-			 
+			 "use strict";
 			 	$(function() {
         $( ".inner-box" ).draggable();
     });
 			 
             $('.btn').click(function() {  
                if (this.id === "add") {  
-                  $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box-442")  
+                  $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box-442") ; 
                } else {  
-               $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box") 
+               $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box") ;
                }  
-            })
-			 
-			 
-			 
-			 
+            });		 
 		
 			 });
 
 
+ 
+
+    
+  
 
 

@@ -11,6 +11,18 @@
 	 <script src="./demo/jquery.ui.touch-punch.min.js"></script>
     <link rel="stylesheet" href="./demo/styletact.css" />
     <script src="./demo/tactmain.js"></script>
+	<script src="./demo/FileSaver.min.js"></script>
+	<script src="./demo/dom-to-image.min.js"></script>
+	<script>
+	
+		function myFunction(){
+	domtoimage.toBlob(document.getElementById('my-node'))
+    .then(function (blob) {
+        window.saveAs(blob, 'my-node.png');
+    });}
+	
+	</script>
+	
 	
 	
 	
@@ -39,6 +51,7 @@
 	<div id="warning-message">
     <p style="font-size: 2em " >This website is BEST viewable in landscape mode in Mobile and Tablet</p>
 </div>
+	<div id="my-node">
 <div id="draggable" class="box" >
 		<span class="inner-box">G</span>
 		<span class="inner-box">2</span>
@@ -68,11 +81,21 @@
 	</div>
 	
 	<div id="acardion-wrap-left">
-		<div class="acardion-block-title">Layout</div>
-      <div class="acardion-block-content">
+		
     	
 					<button class="btn btn-2 btn-2i"id="add">4-4-2</button>
+		 </div>
+	
+	
+	<div id="acardion-wrap-right">
+		
+		            
 					<button class="btn btn-2 btn-2i"id="remove">3-4-3</button>
+		
+		<button class="btn btn-2 btn-2i" onclick="myFunction()">Click me</button>
+		
+	 </div>
+	
 	
 	<!--<span class="inner-box-442">G</span>
 		<!--<span class="inner-box-442">2</span>
@@ -100,8 +123,10 @@
 	    <span class="inner-box-442">11</span>-->
 	
 	
-		</div> </div>
+		
 	
+	
+	</div>
 	
 	
  
