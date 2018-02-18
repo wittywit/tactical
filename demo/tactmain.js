@@ -1,7 +1,7 @@
 // JavaScript Document
 /*! 
  * tactmain.js v 2.2
- * Copyright (c) 2018 Pranshu - http://wittywit.com
+ * Copyright (c) 2018 Pranshu - http://wittywit.com hahahahha YES NARCISISM 
  * Open Source MIT License - 
  */
 // Created: 2018-01-15 
@@ -18,6 +18,11 @@
 			 	$(function() {
         $( ".inner-box" ).draggable();
     });
+			 
+			 
+			 
+			 
+			 
 			 
             $('.btn').click(function() {  
                if (this.id === "add") {  
