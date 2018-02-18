@@ -13,17 +13,35 @@
     <script src="./demo/tactmain.js"></script>
 	<script src="./demo/FileSaver.min.js"></script>
 	<script src="./demo/dom-to-image.min.js"></script>
-	<script type="text/javascript" >
+	<script  >
+	function hideL() {
+     $("span:nth-child(-n+11)").css("display", "none");
+}
+	function showL() {
+     $("span:nth-child(-n+11)").css("display", "block");
+}
 	
-		function myFunction(){
-	domtoimage.toBlob(document.getElementById('my-node'))
-    .then(function (blob) {
-        window.saveAs(blob, 'my-node.png');
-    });}
+	function hideR() {
+     $("span:nth-child(n+13)").css("display", "none");
+}
+	
+		
+	function showR() {
+     $("span:nth-child(n+13)").css("display", "block");
+}
+function downld(){	
+html2canvas(document.querySelector("#my-node")).then(canvas => {
+    document.body.appendChild(canvas)
+});
+}
+	
 	
 	</script>
 	
+	<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 	
+	
+
 	
 	
 	
@@ -43,7 +61,7 @@
 	
  <!--============ Header Navigation =================-->
 	
-	<header> <a href="http://tactical.coach" id="logo" title="Tactical Board for ONSIDE Soccer Consulting"> <span id="logo-label">ONSIDE Soccer Consulting</span> </a>
+	<header> <a href="http://tactical.coach" id="logo" title="Tactical Board for ONSIDE Soccer Consulting"> <p id="logo-label">ONSIDE Soccer Consulting</p> </a>
 	</header>
 	
 	<!--=========== Field and Players ===============-->
@@ -53,47 +71,50 @@
 </div>
 	<div id="my-node">
 <div id="draggable" class="box" >
-		<span class="inner-box">G</span>
-		<span class="inner-box">2</span>
-		<span class="inner-box">3</span>
-		<span class="inner-box">4</span>
-		<span class="inner-box">5</span>
-	    <span class="inner-box">6</span>
-	    <span class="inner-box">7</span>
-	    <span class="inner-box">8</span>
-	    <span class="inner-box">9</span>
-	    <span class="inner-box">10</span>
-	    <span class="inner-box">11</span>
+		<span id="lftPL" class="inner-box">G</span>
+		<span id="lftPL" class="inner-box">2</span>
+		<span id="lftPL"  class="inner-box">3</span>
+		<span id="lftPL" class="inner-box">4</span>
+		<span id="lftPL" class="inner-box">5</span>
+	    <span id="lftPL" class="inner-box">6</span>
+	    <span id="lftPL" class="inner-box">7</span>
+	    <span id="lftPL" class="inner-box">8</span>
+	    <span id="lftPL" class="inner-box">9</span>
+	    <span id="lftPL" class="inner-box">10</span>
+	    <span id="lftPL" class="inner-box">11</span>
 	    <span class="inner-box"></span> 
 	<!--============ Team 2 ==============-->
-	    <span class="inner-box">G</span>
-	    <span class="inner-box">2</span>
-		<span class="inner-box">3</span>
-		<span class="inner-box">4</span>
-		<span class="inner-box">5</span>
-	    <span class="inner-box">6</span>
-	    <span class="inner-box">7</span>
-	    <span class="inner-box">8</span>
-	    <span class="inner-box">9</span>
-	    <span class="inner-box">10</span>
-	    <span class="inner-box">11</span>
+	    <span id="lftPR" class="inner-box">G</span>
+	    <span id="lftPR" class="inner-box">2</span>
+		<span id="lftPR" class="inner-box">3</span>
+		<span id="lftPR" class="inner-box">4</span>
+		<span id="lftPR" class="inner-box">5</span>
+	    <span id="lftPR" class="inner-box">6</span>
+	    <span id="lftPR" class="inner-box">7</span>
+	    <span id="lftPR" class="inner-box">8</span>
+	    <span id="lftPR" class="inner-box">9</span>
+	    <span id="lftPR" class="inner-box">10</span>
+	    <span id="lftPR" class="inner-box">11</span>
 	
 	</div>
 	
 	<div id="acardion-wrap-left">
 		
     	
-					<button class="btn btn-2 btn-2i"id="add">4-4-2</button>
+					
+		<button class="btn btn-2 btn-2i" onclick="showL()">ShowTeam1</button>
+		<button class="btn btn-2 btn-2i" onclick="hideL()">HideTeam1</button>
+		<button class="btn btn-2 btn-2i" onclick="downld()">Download</button>
 		 </div>
 	
 	
 	<div id="acardion-wrap-right">
 		
 		            
-					<button class="btn btn-2 btn-2i"id="remove">3-4-3</button>
+					
 		
-		<button class="btn btn-2 btn-2i" onclick="myFunction()">Click me</button>
-		
+		<button class="btn btn-2 btn-2i" onclick="showR()">Show Team 2</button>
+		<button class="btn btn-2 btn-2i" onclick="hideR()">Hide Team 2</button>
 	 </div>
 	
 	
