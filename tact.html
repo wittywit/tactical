@@ -29,10 +29,13 @@
 	function showR() {
      $("span:nth-child(n+13)").css("display", "block");
 }
-function downld(){	
-html2canvas(document.querySelector("#my-node")).then(canvas => {
-    document.body.appendChild(canvas)
-});
+function downld(){	domtoimage.toJpeg(document.getElementById('my-node'), { quality: 0.95 })
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = 'my-image-name.jpeg';
+        link.href = dataUrl;
+        link.click();
+    });
 }
 	
 	
