@@ -6,58 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tactical Board for ONSIDE Soccer Consulting</title>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />	
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-	 <script src="./demo/jquery.ui.touch-punch.min.js"></script>
     <link rel="stylesheet" href="./demo/styletact.css" />
-    <script src="./demo/tactmain.js"></script>
-	<script src="./demo/FileSaver.min.js"></script>
-	<script src="./demo/dom-to-image.min.js"></script>
-	<script  >
-	function hideL() {
-     $("span:nth-child(-n+11)").css("display", "none");
-}
-	function showL() {
-     $("span:nth-child(-n+11)").css("display", "block");
-}
-	
-	function hideR() {
-     $("span:nth-child(n+13)").css("display", "none");
-}
-	
-		
-	function showR() {
-     $("span:nth-child(n+13)").css("display", "block");
-}
-function downld(){	html2canvas(document.body).then(function(canvas) {
-    // Export canvas as a blob 
-    canvas.toBlob(function(blob) {
-        // Generate file download
-        window.saveAs(blob, "Your_Board_screenshot.png");
-    });
-});
-}
-	
-	
-	</script>
-	
-	<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-	
-	
 
-	
-	
-	
-<!--=================  Script =======================-->	
-	
-  
-	  
-	
-	
-<!--================ Script =======================-->	
-	
-	
-	
 </head>
 <body>
 	
@@ -152,7 +102,56 @@ function downld(){	html2canvas(document.body).then(function(canvas) {
 	
 	</div>
 	
+<!--=================  Script =======================-->
 	
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	 <script src="./demo/jquery.ui.touch-punch.min.js"></script>
+    
+    <script src="./demo/tactmain.js"></script>
+	<script src="./demo/FileSaver.min.js"></script>
+	<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+	<script  >
+	function hideL() {
+     $("span:nth-child(-n+11)").css("display", "none");
+}
+	function showL() {
+     $("span:nth-child(-n+11)").css("display", "block");
+}
+	
+	function hideR() {
+     $("span:nth-child(n+13)").css("display", "none");
+}
+	
+		
+	function showR() {
+     $("span:nth-child(n+13)").css("display", "block");
+}
+function downld(){	html2canvas(document.body).then(function(canvas) {
+    // Export canvas as a blob 
+    canvas.toBlob(function(blob) {
+        // Generate file download
+        window.saveAs(blob, "Your_Board_screenshot.png");
+    });
+});
+}
+	
+	
+ $(document).ready(function() { 
+			 
+			 "use strict";
+			 	$(function() {
+        $( ".inner-box" ).draggable();
+    });$('.btn').click(function() {  
+               if (this.id === "add") {  
+                  $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box-442") ; 
+               } else {  
+               $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box") ;
+               }});	});	</script>
+	
+	
+	
+<!--================ Script =======================-->		
  
 	 
  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
