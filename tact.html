@@ -5,9 +5,10 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tactical Board for ONSIDE Soccer Consulting</title>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />	
+    <link rel="stylesheet" href="./jquery-ui.min.css" />	    
     <link rel="stylesheet" href="./demo/styletact.css" />
 
+	
 </head>
 <body>
 	
@@ -102,15 +103,19 @@
 	
 	</div>
 	
-<!--=================  Script =======================-->
 	
-	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-	 <script src="./demo/jquery.ui.touch-punch.min.js"></script>
+ 
+	 
+ <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+	
+	<!--=================  Script =======================-->	
+	
+	<script src="./jquery.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+	 <script src="./jquery.ui.touch-punch.min.js"></script>
     
-    <script src="./demo/tactmain.js"></script>
 	<script src="./demo/FileSaver.min.js"></script>
-	<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+	
 	<script  >
 	function hideL() {
      $("span:nth-child(-n+11)").css("display", "none");
@@ -136,8 +141,9 @@ function downld(){	html2canvas(document.body).then(function(canvas) {
 });
 }
 	
-	
- $(document).ready(function() { 
+		
+		
+		 $(document).ready(function() { 
 			 
 			 "use strict";
 			 	$(function() {
@@ -147,14 +153,16 @@ function downld(){	html2canvas(document.body).then(function(canvas) {
                   $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box-442") ; 
                } else {  
                $('#draggable>span').removeClass("inner-box inner-box-442").addClass("inner-box") ;
-               }});	});	</script>
+               }});	});
+
 	
+	</script>
 	
-	
-<!--================ Script =======================-->		
+	<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
  
-	 
- <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
- 
+	
+	<!--=================  Script =======================-->	
+	
+	
 </body>
 </html>
